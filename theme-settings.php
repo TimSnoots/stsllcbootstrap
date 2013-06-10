@@ -58,19 +58,19 @@ function stsllcbootstrap_form_system_theme_settings_alter(&$form, $form_state, $
     '#default_value' => theme_get_setting('cdn_bootstrap_version'),
   );
 
-  $form['branding'] = array(
+  $form['stsllcbootstrap_branding_container'] = array(
     '#type' => 'fieldset',
     '#title' => t('Branding and Theme Constants'),
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,
   );
   
-  $form['branding']['brandingpath'] = array(
+  $form['stsllcbootstrap_branding_container']['stsllcbootstrap_brandingpath'] = array(
     '#type' => 'textfield',
     '#title' => t('Path to branding files'),
-    '#description' => t('Enter the path to branding files (i.e. images, backgrounds, logos, icons).'),
-    '#default_value' => '/files',
-    '#size' => 15,
+    '#description' => t('Enter the web accessible path to the directory where branding files are stored (i.e. images, backgrounds, logos, icons).  This theme purposely keeps these files separate from the theme for flexibility.  For example, if your branding files are available at http://example.com/sites/default/files/branding/ then enter /sites/default/files/branding'),
+    '#default_value' => theme_get_setting('stsllcbootstrap_brandingpath'),
+    '#size' => 30,
   );
 
 
