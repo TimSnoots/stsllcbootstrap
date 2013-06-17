@@ -1,4 +1,57 @@
 /**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
+ * STSLLCBootstrap Notes - In this bootstrap subtheme a combined and minified bootstrap CSS file
+ *   is retrieved from a CDN.  Therefore, to add overrides below you should use the source of
+ *   both bootstrap.css and bootstrap-responsive.css as reference.
+ *
+ *   Also refer to http://twitter.github.io/bootstrap/scaffolding.html#responsive
+ *
+ *   Note that for the following to work they will need to OVERRIDE those provided by bootstrap
  */
+ 
+/**
+ * Defaults for small screens (and all others if not specified below)
+ */
+
+
+
+/**
+ * Exceptions for large desktops
+ */
+@media (min-width: 1200px) {
+}
+
+
+/**
+ * Exceptions for bootstrap 2.3's DEFAULT 980 and up
+ */
+@media (min-width: 980px) and (max-width: 1199px) {
+}
+
+
+/**
+ * Exceptions for portrait tablet to landscape and desktop
+ */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+
+/**
+ * Exceptions for Landscape phone to portrait tablet
+ */
+@media (max-width: 767px) {
+}
+
+
+/**
+ * Exceptions for Landscape phones and down
+ */
+@media (max-width: 480px) {
+}
+
+
+/**
+ * Exceptions for print
+ */
+@media print {
+
+}
